@@ -1,0 +1,17 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:if condition="{tags}">
+	<div class="tx_statictagcloud">
+		<ul>
+			<f:for each="{tags}" as="tag">
+				<li class="priority-{tag.priority}">
+					<f:link.page pageUid="{tag.link}">{tag.tag}</f:link.page>
+				</li>
+			</f:for>
+		</ul>
+	</div>
+</f:if>
+
+</f:section>

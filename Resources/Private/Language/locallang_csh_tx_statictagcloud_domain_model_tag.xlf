@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud">
+		<header/>
+		<body>
+
+			<trans-unit id="tag.description">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="link.description">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="priority.description">
+				<source>Priority</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
