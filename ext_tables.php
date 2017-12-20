@@ -10,7 +10,7 @@ if (!defined('TYPO3_MODE')) {
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    'JWeiland.' . $_EXTKEY,
+    'statictagcloud',
     'Configuration/TypoScript',
     'Static Tagcloud'
 );
