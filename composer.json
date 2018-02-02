@@ -2,7 +2,6 @@
     "name": "jweiland/statictagcloud",
     "type": "typo3-cms-extension",
     "description": "Create your own static tagcloud and define on your own which word has priority",
-    "version": "2.0.2",
     "license": "GPL-2.0-or-later",
     "keywords": ["typo3", "TYPO3 CMS", "statictagcloud", "static", "tag", "cloud"],
     "homepage": "http://www.jweiland.net",
