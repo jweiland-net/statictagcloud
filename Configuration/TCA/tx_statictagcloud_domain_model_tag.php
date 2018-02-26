@@ -138,17 +138,8 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:tx_statictagcloud_domain_model_tag.link',
             'config' => [
-                'type' => 'group',
-                'internal_type' => 'db',
-                'allowed' => 'pages',
-                'minitems' => 1,
-                'maxitems' => 1,
-                'show_thumbs' => 0,
-                'wizards' => [
-                    'suggest' => [
-                        'type' => 'suggest'
-                    ]
-                ]
+                'type' => 'input',
+                'renderType' => 'inputLink'
             ]
         ],
         'priority' => [
