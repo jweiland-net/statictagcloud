@@ -1,26 +1,20 @@
 <?php
-namespace JWeiland\Statictagcloud\Controller;
+
+declare(strict_types=1);
 
 /*
- * This file is part of the TYPO3 CMS project.
- *
- * It is free software; you can redistribute it and/or modify it under
- * the terms of the GNU General Public License, either version 2
- * of the License, or any later version.
- *
+ * This file is part of the package jweiland/ce_headerimage.
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * The TYPO3 project - inspiring people to share!
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace JWeiland\Statictagcloud\Controller;
 
 use JWeiland\Statictagcloud\Domain\Repository\TagRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
  * Class TagController
- *
- * @package JWeiland\Statictagcloud\Controller
  */
 class TagController extends ActionController
 {
@@ -35,7 +29,6 @@ class TagController extends ActionController
      * inject tagRepository
      *
      * @param TagRepository $tagRepository
-     * @return void
      */
     public function injectTagRepository(TagRepository $tagRepository)
     {
@@ -44,10 +37,8 @@ class TagController extends ActionController
 
     /**
      * action list
-     *
-     * @return void
      */
-    public function listAction()
+    public function listAction(): void
     {
         $tags = $this->tagRepository->findAll();
         $this->view->assign('tags', $tags->getQuery()->setLimit(9)->execute());

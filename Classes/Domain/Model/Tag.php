@@ -1,25 +1,19 @@
 <?php
-namespace JWeiland\Statictagcloud\Domain\Model;
+
+declare(strict_types=1);
 
 /*
- * This file is part of the TYPO3 CMS project.
- *
- * It is free software; you can redistribute it and/or modify it under
- * the terms of the GNU General Public License, either version 2
- * of the License, or any later version.
- *
+ * This file is part of the package jweiland/ce_headerimage.
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * The TYPO3 project - inspiring people to share!
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace JWeiland\Statictagcloud\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /**
  * Class Tx_Statictagcloud_Domain_Model_Tag
- *
- * @package JWeiland\Statictagcloud\Domain\Model
  */
 class Tag extends AbstractEntity
 {
@@ -65,11 +59,12 @@ class Tag extends AbstractEntity
      * Sets the tag
      *
      * @param string $tag
-     * @return void
+     * @return Tag
      */
-    public function setTag(string $tag)
+    public function setTag(string $tag): Tag
     {
         $this->tag = $tag;
+        return $this;
     }
 
     /**
@@ -86,11 +81,12 @@ class Tag extends AbstractEntity
      * Sets the link
      *
      * @param string $link
-     * @return void
+     * @return Tag
      */
-    public function setLink(string $link)
+    public function setLink(string $link): Tag
     {
         $this->link = $link;
+        return $this;
     }
 
     /**
@@ -107,11 +103,12 @@ class Tag extends AbstractEntity
      * Sets the priority
      *
      * @param int $priority
-     * @return void
+     * @return Tag
      */
-    public function setPriority(int $priority)
+    public function setPriority(int $priority): Tag
     {
         $this->priority = $priority;
+        return $this;
     }
 
     /**
@@ -128,10 +125,11 @@ class Tag extends AbstractEntity
      * Sets the sorting
      *
      * @param int $sorting
-     * @return void
+     * @return Tag
      */
-    public function setSorting(int $sorting)
+    public function setSorting(int $sorting): Tag
     {
         $this->sorting = $sorting;
+        return $this;
     }
 }
