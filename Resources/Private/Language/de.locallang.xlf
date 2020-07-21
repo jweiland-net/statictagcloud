@@ -6,7 +6,7 @@
 
 			<trans-unit id="tx_statictagcloud_domain_model_tag">
 				<source>Tags</source>
-				<target></target>
+				<target>Stichworte</target>
 			</trans-unit>
 			<trans-unit id="tx_statictagcloud_domain_model_tag.tag">
 				<source>Tag</source>
