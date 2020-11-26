@@ -3,6 +3,16 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud">
 		<header/>
 		<body>
+			<trans-unit id="plugin.title">
+				<source>Static Tag Cloud</source>
+			</trans-unit>
+
+			<trans-unit id="plugin.directory.title">
+				<source>Static Tag Cloud</source>
+			</trans-unit>
+			<trans-unit id="plugin.directory.description">
+				<source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
+			</trans-unit>
 
 			<trans-unit id="tx_statictagcloud_domain_model_tag">
 				<source>Tags</source>
@@ -13,10 +23,9 @@
 			<trans-unit id="tx_statictagcloud_domain_model_tag.link">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.priority">
-				<source>Priority</source>
+			<trans-unit id="tx_statictagcloud_domain_model_tag.priority.description">
+				<source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>
