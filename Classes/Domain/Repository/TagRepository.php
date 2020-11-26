@@ -14,7 +14,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
- * Class Tx_Statictagcloud_Domain_Repository_TagRepository
+ * Repository to retrieve tags from the database
  */
 class TagRepository extends Repository
 {
