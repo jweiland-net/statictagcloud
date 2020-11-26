@@ -22,6 +22,7 @@ if (PHP_SAPI !== 'cli') {
 
 $headerComment = <<<COMMENT
 This file is part of the package jweiland/statictagcloud.
+
 For the full copyright and license information, please read the
 LICENSE file that was distributed with this source code.
 COMMENT;
@@ -95,5 +96,5 @@ return PhpCsFixer\Config::create()
             ->name('*.php')
             ->exclude('.build')
             ->exclude('var')
-            ->in(__DIR__)
+            ->in(__DIR__ . '/..')
     );
