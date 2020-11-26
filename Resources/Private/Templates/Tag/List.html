@@ -1,15 +1,18 @@
+<html lang="en"
+			xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+			data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
 
 <f:section name="main">
-
-<f:if condition="{tags}">
-	<ul class="no-bullets">
-		<f:for each="{tags}" as="tag">
-			<li class="priority-{tag.priority}">
-				<f:link.page pageUid="{tag.link}">{tag.tag} </f:link.page>
-			</li>
-		</f:for>
-	</ul>
-</f:if>
-
+	<f:if condition="{tags}">
+		<ul class="no-bullets">
+			<f:for each="{tags}" as="tag">
+				<li class="priority-{tag.priority}">
+					<f:link.typolink parameter="{tag.link}">{tag.tag}</f:link.typolink>
+				</li>
+			</f:for>
+		</ul>
+	</f:if>
 </f:section>
+</html>

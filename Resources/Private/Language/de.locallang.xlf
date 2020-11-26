@@ -3,7 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud">
 		<header/>
 		<body>
-
 			<trans-unit id="tx_statictagcloud_domain_model_tag">
 				<source>Tags</source>
 				<target>Stichworte</target>
@@ -18,9 +17,8 @@
 			</trans-unit>
 			<trans-unit id="tx_statictagcloud_domain_model_tag.priority">
 				<source>Priority</source>
-				<target>Gewichtung 1 (max) - 5 (min)</target>
+				<target>Gewichtung</target>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>
