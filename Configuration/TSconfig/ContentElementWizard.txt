@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+  elements {
+    statictagcloud-tagcloud {
+      iconIdentifier = ext-statictagcloud-tagcloud-wizard-icon
+      title = LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:plugin.directory.title
+      description = LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:plugin.directory.description
+      tt_content_defValues {
+        CType = list
+        list_type = statictagcloud_tagcloud
+      }
+    }
+  }
+}
+
+# Add CType Preview
+mod.web_layout.tt_content.preview.list.statictagcloud_tagcloud = EXT:statictagcloud/Resources/Private/Templates/PluginPreview/TableView.html
