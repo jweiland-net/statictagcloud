@@ -20,7 +20,7 @@ return [
             'endtime' => 'endtime'
         ],
         'searchFields' => 'tag',
-        'iconfile' => 'EXT:statictagcloud/Resources/Public/Icons/tx_statictagcloud_domain_model_tag.gif'
+        'iconfile' => 'EXT:statictagcloud/Resources/Public/Icons/tx_statictagcloud_domain_model_tag.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, tag, link, priority'
