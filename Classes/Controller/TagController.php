@@ -24,7 +24,7 @@ class TagController extends ActionController
      */
     protected $tagRepository;
 
-    public function __construct(TagRepository $tagRepository)
+    public function injectTagRepository(TagRepository $tagRepository): void
     {
         $this->tagRepository = $tagRepository;
     }
@@ -32,6 +32,9 @@ class TagController extends ActionController
     public function listAction(): void
     {
         $tags = $this->tagRepository->findAll();
-        $this->view->assign('tags', $tags->getQuery()->setLimit(9)->execute());
+        $this->view->assign(
+            'tags',
+            $tags->getQuery()->setLimit(9)->execute()
+        );
     }
 }
