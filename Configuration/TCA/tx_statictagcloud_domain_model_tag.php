@@ -6,7 +6,6 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'dividers2tabs' => true,
         'sortby' => 'sorting',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
@@ -21,9 +20,6 @@ return [
         ],
         'searchFields' => 'tag',
         'iconfile' => 'EXT:statictagcloud/Resources/Public/Icons/tx_statictagcloud_domain_model_tag.svg'
-    ],
-    'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, tag, link, priority'
     ],
     'types' => [
         '1' => [
@@ -59,7 +55,6 @@ return [
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',

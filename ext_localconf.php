@@ -5,14 +5,14 @@ if (!defined('TYPO3_MODE')) {
 
 call_user_func(function () {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'JWeiland.statictagcloud',
+        'Statictagcloud',
         'Tagcloud',
         [
-            'Tag' => 'list'
+            \JWeiland\Statictagcloud\Controller\TagController::class => 'list',
         ],
         // non-cacheable actions
         [
-            'Tag' => ''
+            \JWeiland\Statictagcloud\Controller\TagController::class => '',
         ]
     );
 
