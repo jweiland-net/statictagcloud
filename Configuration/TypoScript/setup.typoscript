@@ -16,23 +16,9 @@ plugin.tx_statictagcloud {
   persistence {
     storagePid = {$plugin.tx_statictagcloud.persistence.storagePid}
   }
-  features {
-  # uncomment the following line to enable the new Property Mapper.
-  # rewrittenPropertyMapper = 1
-  }
 }
 
 plugin.tx_statictagcloud._CSS_DEFAULT_STYLE (
-	textarea.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
 	.tx-statictagcloud table {
 		border-collapse:separate;
 		border-spacing:10px;
