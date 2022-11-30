@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 4.0.1
+=============
+
+*   Update TYPO3 dependencies to version 10 and 11
+
 Version 4.0.0
 =============
 
