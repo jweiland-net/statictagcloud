@@ -4,7 +4,7 @@
 	"description": "Create your own static tagcloud and define on your own which word has priority",
 	"license": "GPL-2.0-or-later",
 	"keywords": ["typo3", "TYPO3 CMS", "statictagcloud", "static", "tag", "cloud"],
-	"homepage": "https://www.jweiland.net",
+	"homepage": "https://jweiland.net",
 	"authors": [
 		{
 			"name": "Stefan Froemken",
