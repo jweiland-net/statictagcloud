@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud">
-		<header/>
-		<body>
-			<trans-unit id="tx_statictagcloud_domain_model_tag">
-				<source>Tags</source>
-				<target>Stichworte</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.tag">
-				<source>Tag</source>
-				<target>Stichwort</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.link">
-				<source>Link</source>
-				<target>Verlinkung auf:</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.priority">
-				<source>Priority</source>
-				<target>Gewichtung</target>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="tx_statictagcloud_domain_model_tag" approved="yes">
+        <source>Tags</source>
+        <target state="final">Stichworte</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag" approved="yes">
+        <source>Tag</source>
+        <target state="final">Stichwort</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Verlinkt auf Seite:</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority" approved="yes">
+        <source>Priority</source>
+        <target state="final">Gewichtung</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
