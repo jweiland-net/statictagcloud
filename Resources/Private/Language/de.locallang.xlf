@@ -3,21 +3,21 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tx_statictagcloud_domain_model_tag">
+      <trans-unit id="tx_statictagcloud_domain_model_tag" approved="yes">
         <source>Tags</source>
-        <target state="needs-translation">Tags</target>
+        <target state="final">Stichworte</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag" approved="yes">
         <source>Tag</source>
-        <target state="needs-translation">Tag</target>
+        <target state="final">Stichwort</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.link">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link" approved="yes">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="final">Verlinkt auf Seite:</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.priority">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority" approved="yes">
         <source>Priority</source>
-        <target state="needs-translation">Priority</target>
+        <target state="final">Gewichtung</target>
       </trans-unit>
     </body>
   </file>
