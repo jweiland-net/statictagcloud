@@ -3,33 +3,33 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="de">
     <header/>
     <body>
-      <trans-unit id="plugin.title">
+      <trans-unit id="plugin.title" approved="yes">
         <source>Static Tag Cloud</source>
-        <target state="needs-translation">Static Tag Cloud</target>
+        <target state="final">Statische Stichwort Wolke</target>
       </trans-unit>
-      <trans-unit id="plugin.directory.title">
+      <trans-unit id="plugin.directory.title" approved="yes">
         <source>Static Tag Cloud</source>
-        <target state="needs-translation">Static Tag Cloud</target>
+        <target state="final">Statische Stichwort Wolke</target>
       </trans-unit>
-      <trans-unit id="plugin.directory.description">
+      <trans-unit id="plugin.directory.description" approved="yes">
         <source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
-        <target state="needs-translation">Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</target>
+        <target state="final">Fügt eine statische Stichwort Wolke ein. Je nach Gewichtung werden die Stichworte größer oder kleiner dargestellt.</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag">
+      <trans-unit id="tx_statictagcloud_domain_model_tag" approved="yes">
         <source>Tags</source>
-        <target state="needs-translation">Tags</target>
+        <target state="final">Stichworte</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag" approved="yes">
         <source>Tag</source>
-        <target state="needs-translation">Tag</target>
+        <target state="final">Stichwort</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.link">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link" approved="yes">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="final">Verlinkt auf Seite:</target>
       </trans-unit>
-      <trans-unit id="tx_statictagcloud_domain_model_tag.priority.description">
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority.description" approved="yes">
         <source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
-        <target state="needs-translation">As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</target>
+        <target state="final">Je höher die Gewichtung, desto größer die Schrift. Gewichtung 1 spiegelt die größte Schrift in der Tag-Cloud wieder</target>
       </trans-unit>
     </body>
   </file>
