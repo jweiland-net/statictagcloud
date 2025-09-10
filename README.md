@@ -32,3 +32,9 @@ Download and install `statictagcloud` with the extension manager module.
 1) Include the static TypoScript of the extension.
 2) Create tag records on a sysfolder.
 3) Add statictagcloud plugin on a page and select at least the sysfolder as startingpoint.
+
+## 3 Support
+
+Free Support is available via [Github Issue Tracker](https://github.com/jweiland-net/statictagcloud/issues).
+
+For commercial support, please contact us at [support@jweiland.net](support@jweiland.net).
