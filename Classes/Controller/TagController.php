@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Statictagcloud\Controller;
 
+use Psr\Http\Message\ResponseInterface;
 use JWeiland\Statictagcloud\Domain\Repository\TagRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
@@ -29,12 +30,13 @@ class TagController extends ActionController
         $this->tagRepository = $tagRepository;
     }
 
-    public function listAction(): void
+    public function listAction(): ResponseInterface
     {
         $tags = $this->tagRepository->findAll();
         $this->view->assign(
             'tags',
             $tags->getQuery()->setLimit(9)->execute()
         );
+        return $this->htmlResponse();
     }
 }

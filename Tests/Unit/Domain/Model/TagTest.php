@@ -11,8 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Statictagcloud\Tests\Unit\Domain\Model;
 
+use PHPUnit\Framework\Attributes\Test;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use JWeiland\Statictagcloud\Domain\Model\Tag;
-use Nimut\TestingFramework\TestCase\UnitTestCase;
 
 /**
  * Test case for class Tx_Statictagcloud_Domain_Model_Tag.
@@ -24,10 +25,7 @@ use Nimut\TestingFramework\TestCase\UnitTestCase;
  */
 class TagTest extends UnitTestCase
 {
-    /**
-     * @var Tag
-     */
-    protected $fixture;
+    protected Tag $fixture;
 
     public function setUp(): void
     {
@@ -39,9 +37,7 @@ class TagTest extends UnitTestCase
         unset($this->fixture);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setTagForStringSetsTag(): void
     {
         $this->fixture->setTag('Conceived at T3CON10');
@@ -52,9 +48,7 @@ class TagTest extends UnitTestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setLinkForStringSetsLink(): void
     {
         $this->fixture->setLink('Conceived at T3CON10');
@@ -65,9 +59,7 @@ class TagTest extends UnitTestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function getPriorityReturnsInitialValueForInteger(): void
     {
         self::assertSame(
@@ -76,9 +68,7 @@ class TagTest extends UnitTestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setPriorityForIntegerSetsPriority(): void
     {
         $this->fixture->setPriority(12);

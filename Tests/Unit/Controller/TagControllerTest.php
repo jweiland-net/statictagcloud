@@ -11,8 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Statictagcloud\Tests\Unit\Controller;
 
+use PHPUnit\Framework\Attributes\Test;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use JWeiland\Statictagcloud\Domain\Model\Tag;
-use Nimut\TestingFramework\TestCase\UnitTestCase;
 
 /**
  * Test case for class Tx_Statictagcloud_Controller_TagController.
@@ -26,10 +27,7 @@ use Nimut\TestingFramework\TestCase\UnitTestCase;
  */
 class TagControllerTest extends UnitTestCase
 {
-    /**
-     * @var Tag
-     */
-    protected $fixture;
+    protected Tag $fixture;
 
     public function setUp(): void
     {
@@ -41,9 +39,7 @@ class TagControllerTest extends UnitTestCase
         unset($this->fixture);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function dummyMethod(): void
     {
         self::markTestIncomplete();

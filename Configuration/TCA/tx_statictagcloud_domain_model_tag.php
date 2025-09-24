@@ -5,7 +5,6 @@ return [
         'label' => 'tag',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'sortby' => 'sorting',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
@@ -39,19 +38,7 @@ return [
         'sys_language_uid' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ],
-                ],
-                'default' => 0,
-            ]
+            'config' => ['type' => 'language']
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
@@ -60,7 +47,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['', 0],
+                    ['label' => '', 'value' => 0],
                 ],
                 'foreign_table' => 'tx_statictagcloud_domain_model_tag',
                 'foreign_table_where' => 'AND tx_statictagcloud_domain_model_tag.pid=###CURRENT_PID### AND tx_statictagcloud_domain_model_tag.sys_language_uid IN (-1,0)',
@@ -164,11 +151,11 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['1', 1],
-                    ['2', 2],
-                    ['3', 3],
-                    ['4', 4],
-                    ['5', 5]
+                    ['label' => '1', 'value' => 1],
+                    ['label' => '2', 'value' => 2],
+                    ['label' => '3', 'value' => 3],
+                    ['label' => '4', 'value' => 4],
+                    ['label' => '5', 'value' => 5]
                 ],
                 'size' => 1,
                 'maxitems' => 1
