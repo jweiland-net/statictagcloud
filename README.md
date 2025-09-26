@@ -6,7 +6,7 @@
 [![Monthly Downloads][extension-monthly-downloads]][extension-packagist-url]
 [![TYPO3 13.4][TYPO3-shield]][TYPO3-13-url]
 
-![Build Status](https://github.com/jweiland-net/jw_forms/workflows/CI/badge.svg)
+![Build Status](https://github.com/jweiland-net/statictagcloud/workflows/CI/badge.svg)
 
 With `statictagcloud` you can create tags and assign them a priority.
 The higher the priority the bigger is the font for the tag in cloud.
