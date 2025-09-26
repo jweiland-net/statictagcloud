@@ -1,10 +1,16 @@
 {
 	"name": "jweiland/statictagcloud",
-	"type": "typo3-cms-extension",
 	"description": "Create your own static tagcloud and define on your own which word has priority",
 	"license": "GPL-2.0-or-later",
-	"keywords": ["typo3", "TYPO3 CMS", "statictagcloud", "static", "tag", "cloud"],
-	"homepage": "https://jweiland.net",
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"typo3",
+		"TYPO3 CMS",
+		"statictagcloud",
+		"static",
+		"tag",
+		"cloud"
+	],
 	"authors": [
 		{
 			"name": "Stefan Froemken",
@@ -17,6 +23,7 @@
 			"role": "Senior Developer"
 		}
 	],
+	"homepage": "https://jweiland.net",
 	"support": {
 		"email": "projects@jweiland.net",
 		"issues": "https://github.com/jweiland-net/statictagcloud/issues",
@@ -43,9 +50,9 @@
 	},
 	"config": {
 		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
 			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true,
-			"ergebnis/composer-normalize": true
+			"typo3/cms-composer-installers": true
 		},
 		"bin-dir": ".Build/bin",
 		"sort-packages": true,
@@ -53,8 +60,8 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "statictagcloud",
 			"app-dir": ".Build",
+			"extension-key": "statictagcloud",
 			"web-dir": ".Build/public"
 		}
 	}

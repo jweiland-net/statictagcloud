@@ -4,15 +4,18 @@ plugin.tx_statictagcloud {
       0 = EXT:statictagcloud/Resources/Private/Templates/
       1 = {$plugin.tx_statictagcloud.view.templateRootPath}
     }
+
     partialRootPaths {
       0 = EXT:statictagcloud/Resources/Private/Partials/
       1 = {$plugin.tx_statictagcloud.view.partialRootPath}
     }
+
     layoutRootPaths {
       0 = EXT:statictagcloud/Resources/Private/Layouts/
       1 = {$plugin.tx_statictagcloud.view.layoutRootPath}
     }
   }
+
   persistence {
     storagePid = {$plugin.tx_statictagcloud.persistence.storagePid}
   }

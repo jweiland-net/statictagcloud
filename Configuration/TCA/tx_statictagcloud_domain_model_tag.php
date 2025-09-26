@@ -1,4 +1,12 @@
 <?php
+
+/*
+ * This file is part of the package jweiland/staticagcloud.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:tx_statictagcloud_domain_model_tag',
@@ -15,30 +23,30 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
-            'endtime' => 'endtime'
+            'endtime' => 'endtime',
         ],
         'searchFields' => 'tag',
-        'iconfile' => 'EXT:statictagcloud/Resources/Public/Icons/tx_statictagcloud_domain_model_tag.svg'
+        'iconfile' => 'EXT:statictagcloud/Resources/Public/Icons/tx_statictagcloud_domain_model_tag.svg',
     ],
     'types' => [
         '1' => [
             'showitem' => '--palette--;;languageHidden, --palette--;;tagPriority, link,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access'
-        ]
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access',
+        ],
     ],
     'palettes' => [
         'languageHidden' => ['showitem' => 'sys_language_uid, l10n_parent, hidden'],
         'tagPriority' => ['showitem' => 'tag, priority'],
         'access' => [
             'showitem' => 'starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel',
-        ]
+        ],
     ],
     'columns' => [
         'sys_language_uid' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
-            'config' => ['type' => 'language']
+            'config' => ['type' => 'language'],
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
@@ -57,13 +65,13 @@ return [
                     ],
                 ],
                 'default' => 0,
-            ]
+            ],
         ],
         'l10n_diffsource' => [
             'config' => [
                 'type' => 'passthrough',
-                'default' => ''
-            ]
+                'default' => '',
+            ],
         ],
         'hidden' => [
             'exclude' => true,
@@ -71,32 +79,32 @@ return [
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
-                'default' => 0
-            ]
+                'default' => 0,
+            ],
         ],
         'cruser_id' => [
             'label' => 'cruser_id',
             'config' => [
-                'type' => 'passthrough'
-            ]
+                'type' => 'passthrough',
+            ],
         ],
         'pid' => [
             'label' => 'pid',
             'config' => [
-                'type' => 'passthrough'
-            ]
+                'type' => 'passthrough',
+            ],
         ],
         'crdate' => [
             'label' => 'crdate',
             'config' => [
                 'type' => 'passthrough',
-            ]
+            ],
         ],
         'tstamp' => [
             'label' => 'tstamp',
             'config' => [
                 'type' => 'passthrough',
-            ]
+            ],
         ],
         'starttime' => [
             'exclude' => true,
@@ -110,7 +118,7 @@ return [
                 'behaviour' => [
                     'allowLanguageSynchronization' => true,
                 ],
-            ]
+            ],
         ],
         'endtime' => [
             'exclude' => true,
@@ -124,7 +132,7 @@ return [
                 'behaviour' => [
                     'allowLanguageSynchronization' => true,
                 ],
-            ]
+            ],
         ],
         'tag' => [
             'exclude' => true,
@@ -132,16 +140,16 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'link' => [
             'exclude' => true,
             'label' => 'LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:tx_statictagcloud_domain_model_tag.link',
             'config' => [
                 'type' => 'input',
-                'renderType' => 'inputLink'
-            ]
+                'renderType' => 'inputLink',
+            ],
         ],
         'priority' => [
             'exclude' => true,
@@ -155,16 +163,16 @@ return [
                     ['label' => '2', 'value' => 2],
                     ['label' => '3', 'value' => 3],
                     ['label' => '4', 'value' => 4],
-                    ['label' => '5', 'value' => 5]
+                    ['label' => '5', 'value' => 5],
                 ],
                 'size' => 1,
-                'maxitems' => 1
-            ]
+                'maxitems' => 1,
+            ],
         ],
         'sorting' => [
             'config' => [
-                'type' => 'passthrough'
-            ]
-        ]
-    ]
+                'type' => 'passthrough',
+            ],
+        ],
+    ],
 ];

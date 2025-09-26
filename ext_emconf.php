@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of the package jweiland/staticagcloud.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Static Tagcloud',
     'description' => 'Create your own static tagcloud and define on your own which word has priority',
@@ -14,6 +21,6 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '10.4.32-11.5.99',
         ],
         'conflicts' => [],
-        'suggests' => []
-    ]
+        'suggests' => [],
+    ],
 ];

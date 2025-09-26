@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/statictagcloud.
+ * This file is part of the package jweiland/staticagcloud.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Statictagcloud\Tests\Unit\Domain\Model;
 
+use JWeiland\Statictagcloud\Domain\Model\Tag;
 use PHPUnit\Framework\Attributes\Test;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
-use JWeiland\Statictagcloud\Domain\Model\Tag;
 
 /**
  * Test case for class Tx_Statictagcloud_Domain_Model_Tag.
@@ -44,7 +44,7 @@ class TagTest extends UnitTestCase
 
         self::assertSame(
             'Conceived at T3CON10',
-            $this->fixture->getTag()
+            $this->fixture->getTag(),
         );
     }
 
@@ -55,7 +55,7 @@ class TagTest extends UnitTestCase
 
         self::assertSame(
             'Conceived at T3CON10',
-            $this->fixture->getLink()
+            $this->fixture->getLink(),
         );
     }
 
@@ -64,7 +64,7 @@ class TagTest extends UnitTestCase
     {
         self::assertSame(
             0,
-            $this->fixture->getPriority()
+            $this->fixture->getPriority(),
         );
     }
 
@@ -75,7 +75,7 @@ class TagTest extends UnitTestCase
 
         self::assertSame(
             12,
-            $this->fixture->getPriority()
+            $this->fixture->getPriority(),
         );
     }
 }
