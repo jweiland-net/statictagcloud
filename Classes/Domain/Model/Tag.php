@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/statictagcloud.
+ * This file is part of the package jweiland/staticagcloud.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -18,25 +18,13 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
  */
 class Tag extends AbstractEntity
 {
-    /**
-     * @var string
-     */
-    protected $tag = '';
+    protected string $tag = '';
 
-    /**
-     * @var string
-     */
-    protected $link = '';
+    protected string $link = '';
 
-    /**
-     * @var int
-     */
-    protected $priority = 0;
+    protected int $priority = 0;
 
-    /**
-     * @var int
-     */
-    protected $sorting = 0;
+    protected int $sorting = 0;
 
     public function getTag(): string
     {

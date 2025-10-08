@@ -5,8 +5,7 @@ mod.wizards.newContentElement.wizardItems.plugins {
       title = LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:plugin.directory.title
       description = LLL:EXT:statictagcloud/Resources/Private/Language/locallang_db.xlf:plugin.directory.description
       tt_content_defValues {
-        CType = list
-        list_type = statictagcloud_tagcloud
+        CType = statictagcloud_tagcloud
       }
     }
   }

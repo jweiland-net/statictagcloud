@@ -7,14 +7,6 @@
  * LICENSE file that was distributed with this source code.
  */
 
-if (!defined('TYPO3')) {
-    die('Access denied.');
-}
-
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-
-ExtensionUtility::registerPlugin(
-    'Statictagcloud',
-    'Tagcloud',
-    'Static Tagcloud',
-);
+defined('LF') ?: define('LF', chr(10));
+defined('CR') ?: define('CR', chr(13));
+defined('CRLF') ?: define('CRLF', CR . LF);

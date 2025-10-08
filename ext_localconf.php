@@ -1,38 +1,30 @@
 <?php
-if (!defined('TYPO3_MODE')) {
+
+/*
+ * This file is part of the package jweiland/staticagcloud.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
+use JWeiland\Statictagcloud\Controller\TagController;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+if (!defined('TYPO3')) {
     die('Access denied.');
 }
 
 call_user_func(function () {
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtensionUtility::configurePlugin(
         'Statictagcloud',
         'Tagcloud',
         [
-            \JWeiland\Statictagcloud\Controller\TagController::class => 'list',
+            TagController::class => 'list',
         ],
         // non-cacheable actions
         [
-            \JWeiland\Statictagcloud\Controller\TagController::class => '',
-        ]
+            TagController::class => '',
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
     );
-
-    // add statictagcloud plugin to new element wizard
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:statictagcloud/Configuration/TSconfig/ContentElementWizard.txt">'
-    );
-
-    // Register SVG Icon Identifier
-    $svgIcons = [
-        'ext-statictagcloud-tagcloud-wizard-icon' => 'plugin_wizard.svg',
-    ];
-    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-        \TYPO3\CMS\Core\Imaging\IconRegistry::class
-    );
-    foreach ($svgIcons as $identifier => $fileName) {
-        $iconRegistry->registerIcon(
-            $identifier,
-            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:statictagcloud/Resources/Public/Icons/' . $fileName]
-        );
-    }
 });

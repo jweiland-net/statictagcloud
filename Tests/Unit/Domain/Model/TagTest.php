@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/statictagcloud.
+ * This file is part of the package jweiland/staticagcloud.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -12,7 +12,8 @@ declare(strict_types=1);
 namespace JWeiland\Statictagcloud\Tests\Unit\Domain\Model;
 
 use JWeiland\Statictagcloud\Domain\Model\Tag;
-use Nimut\TestingFramework\TestCase\UnitTestCase;
+use PHPUnit\Framework\Attributes\Test;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 /**
  * Test case for class Tx_Statictagcloud_Domain_Model_Tag.
@@ -24,10 +25,7 @@ use Nimut\TestingFramework\TestCase\UnitTestCase;
  */
 class TagTest extends UnitTestCase
 {
-    /**
-     * @var Tag
-     */
-    protected $fixture;
+    protected Tag $fixture;
 
     public function setUp(): void
     {
@@ -39,53 +37,45 @@ class TagTest extends UnitTestCase
         unset($this->fixture);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setTagForStringSetsTag(): void
     {
         $this->fixture->setTag('Conceived at T3CON10');
 
         self::assertSame(
             'Conceived at T3CON10',
-            $this->fixture->getTag()
+            $this->fixture->getTag(),
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setLinkForStringSetsLink(): void
     {
         $this->fixture->setLink('Conceived at T3CON10');
 
         self::assertSame(
             'Conceived at T3CON10',
-            $this->fixture->getLink()
+            $this->fixture->getLink(),
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function getPriorityReturnsInitialValueForInteger(): void
     {
         self::assertSame(
             0,
-            $this->fixture->getPriority()
+            $this->fixture->getPriority(),
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setPriorityForIntegerSetsPriority(): void
     {
         $this->fixture->setPriority(12);
 
         self::assertSame(
             12,
-            $this->fixture->getPriority()
+            $this->fixture->getPriority(),
         );
     }
 }

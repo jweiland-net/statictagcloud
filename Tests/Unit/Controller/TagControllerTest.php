@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/statictagcloud.
+ * This file is part of the package jweiland/staticagcloud.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -12,7 +12,8 @@ declare(strict_types=1);
 namespace JWeiland\Statictagcloud\Tests\Unit\Controller;
 
 use JWeiland\Statictagcloud\Domain\Model\Tag;
-use Nimut\TestingFramework\TestCase\UnitTestCase;
+use PHPUnit\Framework\Attributes\Test;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 /**
  * Test case for class Tx_Statictagcloud_Controller_TagController.
@@ -26,10 +27,7 @@ use Nimut\TestingFramework\TestCase\UnitTestCase;
  */
 class TagControllerTest extends UnitTestCase
 {
-    /**
-     * @var Tag
-     */
-    protected $fixture;
+    protected Tag $fixture;
 
     public function setUp(): void
     {
@@ -41,9 +39,7 @@ class TagControllerTest extends UnitTestCase
         unset($this->fixture);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function dummyMethod(): void
     {
         self::markTestIncomplete();

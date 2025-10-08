@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/statictagcloud.
+ * This file is part of the package jweiland/staticagcloud.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace JWeiland\Statictagcloud\Controller;
 
 use JWeiland\Statictagcloud\Domain\Repository\TagRepository;
+use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -19,22 +20,15 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class TagController extends ActionController
 {
-    /**
-     * @var TagRepository
-     */
-    protected $tagRepository;
+    public function __construct(protected readonly TagRepository $tagRepository) {}
 
-    public function injectTagRepository(TagRepository $tagRepository): void
-    {
-        $this->tagRepository = $tagRepository;
-    }
-
-    public function listAction(): void
+    public function listAction(): ResponseInterface
     {
         $tags = $this->tagRepository->findAll();
         $this->view->assign(
             'tags',
-            $tags->getQuery()->setLimit(9)->execute()
+            $tags->getQuery()->setLimit(9)->execute(),
         );
+        return $this->htmlResponse();
     }
 }
