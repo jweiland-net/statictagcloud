@@ -7,6 +7,27 @@
 Change log
 ==========
 
+Version 6.0.0
+=============
+
+*   [TASK] TYPO3 13 LTS Compatibility Fixes
+*   [TASK] Plugin list_type to CType migration
+*   [TASK] Some Configuration fixes
+*   [TASK] Fixed Unit Tests
+*   [TASK] Fixed README Badge in root
+*   [BUGFIX] Fixed Content Element Preview
+
+
+Version 5.0.0
+=============
+
+*   [TASK] TYPO3 12 LTS Compatibility Fixes
+*   [TASK] Configuration fixes for TYPO3 12 LTS
+*   [TASK] Test Configuration changes
+*   [TASK] GitIgnore file update
+*   [TASK] Removed old version compatibility
+*   [TASK] Fixed README Badge in root
+
 Version 4.0.1
 =============
 
