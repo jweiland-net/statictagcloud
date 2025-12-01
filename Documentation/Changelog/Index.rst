@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 6.0.1
+=============
+
+*   [BUGFIX] TCA Migration Fixes
+
 Version 6.0.0
 =============
 
