@@ -5,31 +5,31 @@
     <body>
       <trans-unit id="plugin.title">
         <source>Static Tag Cloud</source>
-        <target state="needs-translation">Static Tag Cloud</target>
+        <target state="translated">Statikus címkefelhő</target>
       </trans-unit>
       <trans-unit id="plugin.directory.title">
         <source>Static Tag Cloud</source>
-        <target state="needs-translation">Static Tag Cloud</target>
+        <target state="translated">Statikus címkefelhő</target>
       </trans-unit>
       <trans-unit id="plugin.directory.description">
         <source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
-        <target state="needs-translation">Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</target>
+        <target state="translated">Statikus címkefelhőt szúr be. Minél magasabb a prioritás, annál nagyobb a címke betűmérete a felhőben.</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag">
         <source>Tags</source>
-        <target state="needs-translation">Tags</target>
+        <target state="translated">Címkék</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
         <source>Tag</source>
-        <target state="needs-translation">Tag</target>
+        <target state="translated">Címke</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.link">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="translated">Hivatkozás</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.priority.description">
         <source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
-        <target state="needs-translation">As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</target>
+        <target state="translated">Minél magasabb a prioritás, annál nagyobb a betűméret. Az 1. prioritás jelenti a legnagyobb betűméretet a címkefelhőben.</target>
       </trans-unit>
     </body>
   </file>
