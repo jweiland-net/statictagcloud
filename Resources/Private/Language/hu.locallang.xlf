@@ -5,19 +5,19 @@
     <body>
       <trans-unit id="tx_statictagcloud_domain_model_tag">
         <source>Tags</source>
-        <target state="needs-translation">Tags</target>
+        <target state="translated">Címkék</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
         <source>Tag</source>
-        <target state="needs-translation">Tag</target>
+        <target state="translated">Címke</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.link">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="translated">Hivatkozás</target>
       </trans-unit>
       <trans-unit id="tx_statictagcloud_domain_model_tag.priority">
         <source>Priority</source>
-        <target state="needs-translation">Priority</target>
+        <target state="translated">Prioritás</target>
       </trans-unit>
     </body>
   </file>
