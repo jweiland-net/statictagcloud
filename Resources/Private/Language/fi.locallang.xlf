@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="fi">
+    <header/>
+    <body>
+      <trans-unit id="tx_statictagcloud_domain_model_tag">
+        <source>Tags</source>
+        <target state="needs-translation">Tags</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
+        <source>Tag</source>
+        <target state="needs-translation">Tag</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link">
+        <source>Link</source>
+        <target state="needs-translation">Link</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority">
+        <source>Priority</source>
+        <target state="needs-translation">Priority</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

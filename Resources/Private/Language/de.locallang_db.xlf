@@ -1,42 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud">
-		<header/>
-		<body>
-			<trans-unit id="plugin.title">
-				<source>Static Tag Cloud</source>
-				<target>Statische Stichwort Wolke</target>
-			</trans-unit>
-
-			<trans-unit id="plugin.directory.title">
-				<source>Static Tag Cloud</source>
-				<target>Statische Stichwort Wolke</target>
-			</trans-unit>
-			<trans-unit id="plugin.directory.description">
-				<source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
-				<target>Fügt eine statische Stichwort Wolke ein. Je nach Gewichtung werden die Stichworte größer oder kleiner dargestellt.</target>
-			</trans-unit>
-
-			<trans-unit id="tx_statictagcloud_domain_model_tag">
-				<source>Tags</source>
-				<target>Stichworte</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.tag">
-				<source>Tag</source>
-				<target>Stichwort</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.link">
-				<source>Link</source>
-				<target>Verlinkt auf Seite:</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.priority">
-				<source>Priority</source>
-				<target>Gewichtung</target>
-			</trans-unit>
-			<trans-unit id="tx_statictagcloud_domain_model_tag.priority.description">
-				<source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
-				<target>Je höher die Gewichtung, desto größer die Schrift. Gewichtung 1 spiegelt die größte Schrift in der Tag-Cloud wieder</target>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="plugin.title" approved="yes">
+        <source>Static Tag Cloud</source>
+        <target state="final">Statische Stichwort Wolke</target>
+      </trans-unit>
+      <trans-unit id="plugin.directory.title" approved="yes">
+        <source>Static Tag Cloud</source>
+        <target state="final">Statische Stichwort Wolke</target>
+      </trans-unit>
+      <trans-unit id="plugin.directory.description" approved="yes">
+        <source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
+        <target state="final">Fügt eine statische Stichwort Wolke ein. Je nach Gewichtung werden die Stichworte größer oder kleiner dargestellt.</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag" approved="yes">
+        <source>Tags</source>
+        <target state="final">Stichworte</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag" approved="yes">
+        <source>Tag</source>
+        <target state="final">Stichwort</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Verlinkt auf Seite:</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority.description" approved="yes">
+        <source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
+        <target state="final">Je höher die Gewichtung, desto größer die Schrift. Gewichtung 1 spiegelt die größte Schrift in der Tag-Cloud wieder</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
