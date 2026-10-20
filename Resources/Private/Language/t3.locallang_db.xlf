@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-09T09:57:09Z" product-name="statictagcloud" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="plugin.title">
+        <source>Static Tag Cloud</source>
+        <target>crwdns310120:0crwdne310120:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.directory.title">
+        <source>Static Tag Cloud</source>
+        <target>crwdns310122:0crwdne310122:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.directory.description">
+        <source>Inserts a static tag cloud. As higher the priority as bigger the font size of the tag in cloud.</source>
+        <target>crwdns310124:0crwdne310124:0</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag">
+        <source>Tags</source>
+        <target>crwdns310126:0crwdne310126:0</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.tag">
+        <source>Tag</source>
+        <target>crwdns310128:0crwdne310128:0</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.link">
+        <source>Link</source>
+        <target>crwdns310130:0crwdne310130:0</target>
+      </trans-unit>
+      <trans-unit id="tx_statictagcloud_domain_model_tag.priority.description">
+        <source>As higher the priority as higher the font size. Priority 1 represents the biggest font size in the tag-cloud</source>
+        <target>crwdns310132:0crwdne310132:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
